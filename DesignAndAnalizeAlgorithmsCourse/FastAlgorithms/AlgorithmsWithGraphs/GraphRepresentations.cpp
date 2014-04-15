@@ -18,12 +18,20 @@ class Graph
 {
 public:
 	bool* used;
+	vector<vector<Edge> > AdjList;
+	//DFS usefull data
+
 	vector<char> Color;
 	vector<int> Tree;
 	vector<int> TimeIn;
 	vector<int> TimeOut;
-	vector<vector<Edge> > AdjList;
 	int Time;
+
+	/* data aboud BFS for application*/
+	vector<char> Colors;
+	vector<int> Distances;
+	vector<int> TreeBFS;
+
 	void readGraph()
 	{
 		int Verteces, Edges;
@@ -98,6 +106,17 @@ public:
 	}
 	void bfs(int vertex)
 	{
+		Colors.resize(AdjList.size());
+		Distances.resize(AdjList.size());
+		TreeBFS.resize(AdjList.size());
+
+		for (size_t i = 1; i < AdjList.size(); i++)
+		{
+			Colors[i] = 'W';
+			Distances[i] = 2, 147, 483, 647;
+			TreeBFS[i] = 0;
+		}
+
 		queue<int> q;
 		q.push(vertex);
 		used[vertex] = true;
@@ -109,13 +128,16 @@ public:
 			q.pop();
 			for (size_t i = 0; i < AdjList[cur].size(); i++)
 			{
-				if (!used[AdjList[cur][i].to])
+				if (!used[AdjList[cur][i].to] && Colors[AdjList[cur][i].to] == 'W')
 				{
+					Distances[AdjList[cur][i].to] = Distances[cur] + 1;
+					TreeBFS[AdjList[cur][i].to] = cur;
+					Colors[AdjList[cur][i].to] = 'G';
 					used[AdjList[cur][i].to] = true;
 					q.push(AdjList[cur][i].to);
 				}
 			}
-
+			Colors[cur] = 'B';
 		}
 	}
 	~Graph()
