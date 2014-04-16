@@ -12,7 +12,7 @@ void wave(int i, int j)
 
 }
 
-int main()
+int mainZ()
 {
 	int N, Days = 0; scanf("%d\n", &N); Matrix.resize(N);
 	for (size_t i = 0; i < N; i++)

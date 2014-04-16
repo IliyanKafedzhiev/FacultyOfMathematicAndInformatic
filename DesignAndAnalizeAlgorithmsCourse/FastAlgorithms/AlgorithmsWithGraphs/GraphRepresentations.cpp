@@ -120,6 +120,9 @@ public:
 		queue<int> q;
 		q.push(vertex);
 		used[vertex] = true;
+		Colors[vertex] = 'G';
+		Distances[vertex] = 0;
+
 
 		while (!q.empty())
 		{

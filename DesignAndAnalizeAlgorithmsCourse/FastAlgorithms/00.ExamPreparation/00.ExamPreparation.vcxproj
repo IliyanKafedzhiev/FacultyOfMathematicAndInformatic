@@ -79,6 +79,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ActionProblemToplologicalSort.cpp" />
     <ClCompile Include="Chokolate.cpp" />
     <ClCompile Include="Dissolution.cpp" />
     <ClCompile Include="Events.cpp" />
