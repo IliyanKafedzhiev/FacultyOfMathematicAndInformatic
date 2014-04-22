@@ -1,47 +1,5 @@
-﻿Build started 4/17/2014 2:40:11 PM.
-     1>Project "C:\Dropbox\F_M_I\2013-2014_sem_s\DesignAndAnalizeAlgorithms\DesignAndAnalize_Practice\DesignAndAnalizeAlgorithmsCourse\FastAlgorithms\AlgorithmsWithGraphs\AlgorithmsWithGraphs.vcxproj" on node 3 (Rebuild target(s)).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (AlgorithmsWithGraphs.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ApplesProblem.cpp Diamether.cpp GraphRepresentations.cpp CountSubGraphs.cpp Labyrinth.cpp LongestPathInGraph.cpp
-         LongestPathInGraph.cpp
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\longestpathingraph.cpp(35): warning C4018: '<=' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\longestpathingraph.cpp(42): warning C4018: '<' : signed/unsigned mismatch
-         Labyrinth.cpp
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\labyrinth.cpp(24): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\labyrinth.cpp(28): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\labyrinth.cpp(44): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\labyrinth.cpp(49): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\labyrinth.cpp(51): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\labyrinth.cpp(78): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\labyrinth.cpp(80): warning C4018: '<' : signed/unsigned mismatch
-         CountSubGraphs.cpp
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\countsubgraphs.cpp(30): warning C4018: '<=' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\countsubgraphs.cpp(37): warning C4018: '<' : signed/unsigned mismatch
-         GraphRepresentations.cpp
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\graphrepresentations.cpp(47): warning C4018: '<=' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\graphrepresentations.cpp(54): warning C4018: '<' : signed/unsigned mismatch
-         Diamether.cpp
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\diamether.cpp(31): warning C4018: '<=' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\diamether.cpp(38): warning C4018: '<' : signed/unsigned mismatch
-         ApplesProblem.cpp
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\applesproblem.cpp(21): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\applesproblem.cpp(66): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\applesproblem.cpp(70): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\applesproblem.cpp(72): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\applesproblem.cpp(89): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\algorithmswithgraphs\applesproblem.cpp(91): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Dropbox\F_M_I\2013-2014_sem_s\DesignAndAnalizeAlgorithms\DesignAndAnalize_Practice\DesignAndAnalizeAlgorithmsCourse\FastAlgorithms\Debug\01.GraphsBFSandDFSApl.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Dropbox\F_M_I\2013-2014_sem_s\DesignAndAnalizeAlgorithms\DesignAndAnalize_Practice\DesignAndAnalizeAlgorithmsCourse\FastAlgorithms\Debug\01.GraphsBFSandDFSApl.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Dropbox\F_M_I\2013-2014_sem_s\DesignAndAnalizeAlgorithms\DesignAndAnalize_Practice\DesignAndAnalizeAlgorithmsCourse\FastAlgorithms\Debug\01.GraphsBFSandDFSApl.lib" /MACHINE:X86 Debug\ApplesProblem.obj
-         Debug\Diamether.obj
-         Debug\GraphRepresentations.obj
-         Debug\CountSubGraphs.obj
-         Debug\Labyrinth.obj
-         Debug\LongestPathInGraph.obj
-     1>MSVCRTD.lib(crtexe.obj) : error LNK2019: unresolved external symbol _main referenced in function ___tmainCRTStartup
-     1>C:\Dropbox\F_M_I\2013-2014_sem_s\DesignAndAnalizeAlgorithms\DesignAndAnalize_Practice\DesignAndAnalizeAlgorithmsCourse\FastAlgorithms\Debug\01.GraphsBFSandDFSApl.exe : fatal error LNK1120: 1 unresolved externals
-     1>Done Building Project "C:\Dropbox\F_M_I\2013-2014_sem_s\DesignAndAnalizeAlgorithms\DesignAndAnalize_Practice\DesignAndAnalizeAlgorithmsCourse\FastAlgorithms\AlgorithmsWithGraphs\AlgorithmsWithGraphs.vcxproj" (Rebuild target(s)) -- FAILED.
+﻿Build started 4/21/2014 1:11:04 PM.
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:09.05
+Time Elapsed 00:00:00.04

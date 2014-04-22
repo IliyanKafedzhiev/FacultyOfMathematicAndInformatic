@@ -1,103 +1,48 @@
 #include <iostream>
-#include <algorithm>
-#include <vector>
+#include <stdio.h>
+#include <deque>
 
 using namespace std;
 
-vector<vector<char > > Matrix;
-bool Final = false;
+int N, Days = 0;
+char Matrix[1005][1005];
 
-bool HasTwoSolutionSides(int x, int y,char sol)
+deque<pair<int, int > > ExecutionQ;
+
+bool HasTwoSolutionSides(int x, int y)
 {
 	int sides = 0;
-	if (x - 1 >= 0 && Matrix[x - 1][y] == sol)
+	if (Matrix[x - 1][y] == '.')
 	{
 		sides++;
 	}
-	if (x + 1 < Matrix.size() && Matrix[x + 1][y] == sol)
+	if (Matrix[x + 1][y] == '.')
 	{
 		sides++;
 	}
-	if (y - 1 >= 0 && Matrix[x][y - 1] == sol)
+	if (Matrix[x][y - 1] == '.')
 	{
 		sides++;
 	}
-	if (y + 1 < Matrix.size() && Matrix[x][y + 1] == sol)
+	if (Matrix[x][y + 1] == '.')
 	{
 		sides++;
 	}
-	if (sides >=2)
+	if (sides >= 2)
 	{
 		return true;
 	}
 	return false;
 }
-
-bool HasOneSolutionSideOrBorder(int x, int y)
-{
-	int sides = 0;
-	if (x - 1 >= 0)
-	{
-		if (Matrix[x - 1][y] == '.')
-		{
-			sides++;
-		}
-	}
-	else
-	{
-		sides++;
-	}
-	if (x + 1 < Matrix.size())
-	{
-		if (Matrix[x + 1][y] == '.')
-		{
-			sides++;
-		}
-	}
-	else
-	{
-		sides++;
-	}
-	if (y - 1 >= 0)
-	{
-		if (Matrix[x][y - 1] == '.')
-		{
-			sides++;
-		}
-	}
-	else
-	{
-		sides++;
-	}
-	if (y + 1 < Matrix.size())
-	{
-		if (Matrix[x][y + 1] == '.')
-		{
-			sides++;
-		}
-	}
-	else
-	{
-		sides++;
-	}
-	if (sides >= 1 )
-	{
-		return true;
-	}
-	return false;
-}
-
-
 
 int main()
 {
-	int N, Days = 0; scanf("%d\n", &N); Matrix.resize(N);
+	scanf("%d\n", &N);
+	char a;
 	for (size_t i = 0; i < N; i++)
 	{
-		Matrix[i].resize(N);
 		for (size_t j = 0; j < N; j++)
 		{
-			char a;
 			scanf("%c", &a);
 			if (a != '\n')
 			{
@@ -110,63 +55,62 @@ int main()
 			}
 		}
 	}
-	int Xmin = 0, Xmax = N - 1;
-	int Ymin = 0, Ymax = N - 1;
-	char sol = '.';
-	//wave in
-	while (!Final)
+	pair<int, int> cur;
+	pair<int, int> tmp;
+	for (int i = 1; i < N - 1; i++)
 	{
-		bool xmin = false;
-		int XXmax = Xmax;
-		int YYmin = 30000000;
-		int YYmax = 0;
-		for (int i = Xmin; i <= Xmax; i++)
+		for (int j = 1; j < N - 1; j++)
 		{
-			int YCurMin = 3000;
-			int YcurMax = 0;
-			bool ycurMin = false;
-			for (int j = Ymin; j < Ymax; j++)
+			if (Matrix[i][j] == '#' && HasTwoSolutionSides(i, j))
 			{
-				if (Matrix[i][j] == '#'  && HasTwoSolutionSides(i,j,sol))
-				{
-					Matrix[i][j] = sol + 1;
-					if (!xmin)
-					{
-						Xmin = i;
-						xmin = true;
-					}
-					XXmax = i;
-					if (!ycurMin)
-					{
-						YCurMin = j;
-						ycurMin = true;
-					}
-					YcurMax = j;
-				}
+				cur.first = i;
+				cur.second = j;
+				ExecutionQ.push_back(cur);
+				Matrix[i][j] = 'Y';
 			}
-			if (ycurMin)
-			{
-				if (YYmin > YCurMin)
-				{
-					YYmin = YCurMin;
-				}
-			}
-			if (YcurMax > YYmax)
-			{
-				YYmax = YcurMax;
-			}
-		}
-		if (YYmin == 30000000)
-		{
-			break;
-		}
-		Ymax = YYmax;
-		Ymin = YYmin;
-		Xmax = XXmax;
-		Days++;
-		sol = sol + 1;
-	}
-	
 
+		}
+	}
+	int sizeQ;
+	while (!ExecutionQ.empty())
+	{
+		Days++;
+		sizeQ = ExecutionQ.size();
+		for (size_t i = 0; i < sizeQ; i++)
+		{
+			cur = ExecutionQ.front(), ExecutionQ.pop_front();
+			Matrix[cur.first][cur.second] = '.';
+			if (Matrix[cur.first - 1][cur.second] == '#' && HasTwoSolutionSides(cur.first - 1, cur.second))
+			{
+				tmp.first = cur.first - 1;
+				tmp.second = cur.second;
+				Matrix[tmp.first][tmp.second] = 'Y';
+				ExecutionQ.push_back(tmp);
+			}
+			if (Matrix[cur.first + 1][cur.second] == '#' && HasTwoSolutionSides(cur.first + 1, cur.second))
+			{
+				tmp.first = cur.first + 1;
+				tmp.second = cur.second;
+				Matrix[tmp.first][tmp.second] = 'Y';
+				ExecutionQ.push_back(tmp);
+			}
+			if (Matrix[cur.first][cur.second - 1] == '#' && HasTwoSolutionSides(cur.first, cur.second - 1))
+			{
+				tmp.first = cur.first;
+				tmp.second = cur.second - 1;
+				Matrix[tmp.first][tmp.second] = 'Y';
+				ExecutionQ.push_back(tmp);
+			}
+			if (Matrix[cur.first][cur.second + 1] == '#' && HasTwoSolutionSides(cur.first, cur.second + 1))
+			{
+				tmp.first = cur.first;
+				tmp.second = cur.second + 1;
+				Matrix[tmp.first][tmp.second] = 'Y';
+				ExecutionQ.push_back(tmp);
+			}
+
+		}
+	}
+	printf("%d\n", Days);
 	return 0;
 }

@@ -1,22 +1,5 @@
-﻿Build started 4/17/2014 2:40:06 PM.
-     1>Project "C:\Dropbox\F_M_I\2013-2014_sem_s\DesignAndAnalizeAlgorithms\DesignAndAnalize_Practice\DesignAndAnalizeAlgorithmsCourse\FastAlgorithms\SlowSortingAlgorithms\SlowSortingAlgorithms.vcxproj" on node 3 (Rebuild target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CERNSortingStrings.cpp ChokolatesSortByExpirDate.cpp SortFractionsNumbers.cpp
-         SortFractionsNumbers.cpp
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\slowsortingalgorithms\sortfractionsnumbers.cpp(37): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\slowsortingalgorithms\sortfractionsnumbers.cpp(39): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\slowsortingalgorithms\sortfractionsnumbers.cpp(41): warning C4018: '<=' : signed/unsigned mismatch
-         ChokolatesSortByExpirDate.cpp
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\slowsortingalgorithms\chokolatessortbyexpirdate.cpp(38): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\slowsortingalgorithms\chokolatessortbyexpirdate.cpp(41): warning C4018: '<' : signed/unsigned mismatch
-         CERNSortingStrings.cpp
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\slowsortingalgorithms\cernsortingstrings.cpp(15): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\dropbox\f_m_i\2013-2014_sem_s\designandanalizealgorithms\designandanalize_practice\designandanalizealgorithmscourse\fastalgorithms\slowsortingalgorithms\cernsortingstrings.cpp(22): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-     1>Done Building Project "C:\Dropbox\F_M_I\2013-2014_sem_s\DesignAndAnalizeAlgorithms\DesignAndAnalize_Practice\DesignAndAnalizeAlgorithmsCourse\FastAlgorithms\SlowSortingAlgorithms\SlowSortingAlgorithms.vcxproj" (Rebuild target(s)) -- FAILED.
+﻿Build started 4/21/2014 1:11:04 PM.
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:04.35
+Time Elapsed 00:00:00.03
