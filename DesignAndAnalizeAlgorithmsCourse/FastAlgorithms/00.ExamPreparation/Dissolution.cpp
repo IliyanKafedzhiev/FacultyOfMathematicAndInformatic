@@ -38,22 +38,9 @@ bool HasTwoSolutionSides(int x, int y)
 int main()
 {
 	scanf("%d\n", &N);
-	char a;
 	for (size_t i = 0; i < N; i++)
 	{
-		for (size_t j = 0; j < N; j++)
-		{
-			scanf("%c", &a);
-			if (a != '\n')
-			{
-				Matrix[i][j] = a;
-			}
-			else
-			{
-				scanf("%c", &a);
-				Matrix[i][j] = a;
-			}
-		}
+		cin >> Matrix[i];
 	}
 	pair<int, int> cur;
 	pair<int, int> tmp;
