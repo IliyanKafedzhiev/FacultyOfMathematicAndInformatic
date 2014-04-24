@@ -40,7 +40,9 @@ public:
 		}
 
 		this->vertices[fromVertex].distance = 0;
+
 		std::priority_queue<Vertex*, vector<Vertex*>, MinComparator> Q;
+
 		for (size_t i = 0; i < this->vertices.size(); i++)
 		{
 			Q.push(&this->vertices[i]);
@@ -183,10 +185,11 @@ int LenghtOfOptimalPath(vector<Node>& Paths, int& numOfDifferentObjects)
 }
 
 
-int mainMM()
+int mainWW()
 {
 	Graph veryBigGraph;
 	veryBigGraph.readDataFromConsole();
+	veryBigGraph.FindShortestPath(1, 3);
 	return 0;
 }
 
