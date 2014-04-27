@@ -183,6 +183,8 @@ public:
 				}
 			}
 		}
+	}
+
 	~GraphZ()
 	{
 		if (used)

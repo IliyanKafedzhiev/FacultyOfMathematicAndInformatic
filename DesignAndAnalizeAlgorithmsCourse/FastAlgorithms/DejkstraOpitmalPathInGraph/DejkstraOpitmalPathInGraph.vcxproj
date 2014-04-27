@@ -82,6 +82,7 @@
     <ClCompile Include="BanicharnicaProblemT7.cpp" />
     <ClCompile Include="DejkstraOptimalPathInGraph.cpp" />
     <ClCompile Include="DijkstraOptimalAlgorithm.cpp" />
+    <ClCompile Include="FloidAlgorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Doc.txt" />

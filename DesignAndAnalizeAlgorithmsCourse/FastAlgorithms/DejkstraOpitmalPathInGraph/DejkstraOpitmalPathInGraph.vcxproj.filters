@@ -24,6 +24,9 @@
     <ClCompile Include="BanicharnicaProblemT7.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FloidAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Doc.txt">
