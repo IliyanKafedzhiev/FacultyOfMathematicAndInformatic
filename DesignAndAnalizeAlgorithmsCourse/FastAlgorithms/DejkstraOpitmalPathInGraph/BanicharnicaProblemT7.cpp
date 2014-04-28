@@ -101,7 +101,7 @@ public:
 	}
 };
 
-int main()
+int mainPP()
 {
 	Graph G;
 	int finalWeight = 0;

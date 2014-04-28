@@ -55,7 +55,7 @@ void  Floid()
 	}
 }
 
-int main()
+int mainWE()
 {
 	ReadInput();
 	Floid();
