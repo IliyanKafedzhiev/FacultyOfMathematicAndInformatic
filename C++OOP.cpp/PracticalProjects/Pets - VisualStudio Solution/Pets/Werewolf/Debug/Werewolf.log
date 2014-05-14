@@ -1,0 +1,25 @@
+﻿Build started 21.5.2013 г. 14:46:27.
+Project "C:\DataWin8\Cplusplus.cpp\PracticalProjects\Pets - VisualStudio Solution\Pets\Werewolf\Werewolf.vcxproj" on node 2 (Build target(s)).
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Account.cpp Werewolf.cpp
+  Werewolf.cpp
+c:\datawin8\cplusplus.cpp\practicalprojects\pets - visualstudio solution\pets\werewolf\werewolf.cpp(47): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+c:\datawin8\cplusplus.cpp\practicalprojects\pets - visualstudio solution\pets\werewolf\werewolf.cpp(130): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+  Account.cpp
+  Generating Code...
+Link:
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\DataWin8\Cplusplus.cpp\PracticalProjects\Pets - VisualStudio Solution\Pets\Debug\Pets.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\DataWin8\Cplusplus.cpp\PracticalProjects\Pets - VisualStudio Solution\Pets\Debug\Pets.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\DataWin8\Cplusplus.cpp\PracticalProjects\Pets - VisualStudio Solution\Pets\Debug\Pets.lib" /MACHINE:X86 Debug\Account.obj
+  Debug\main.obj
+  Debug\Werewolf.obj
+Account.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Account::withdraw(double)" (?withdraw@Account@@UAEXN@Z)
+Account.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Account::print(void)const " (?print@Account@@UBEXXZ)
+Account.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall AccountPlus::print(void)const " (?print@AccountPlus@@UBEXXZ)
+Account.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall AccountPlus::withdraw(double)" (?withdraw@AccountPlus@@UAEXN@Z)
+C:\DataWin8\Cplusplus.cpp\PracticalProjects\Pets - VisualStudio Solution\Pets\Debug\Pets.exe : fatal error LNK1120: 4 unresolved externals
+Done Building Project "C:\DataWin8\Cplusplus.cpp\PracticalProjects\Pets - VisualStudio Solution\Pets\Werewolf\Werewolf.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.99

@@ -1,0 +1,82 @@
+Shop NameNewShop
+Adress:Adress
+Album : Unforgiven
+Artist : Metalica
+year : 2332
+Price: 32
+ID: 67
+Genre : Metal
+Type : CD
+
+Album : Unforgiven
+Artist : Metalica
+year : 2332
+Price: 32
+ID: 68
+Genre : Metal
+Type : CD
+
+Album : Unforgiven
+Artist : Metalica
+year : 2332
+Price: 32
+ID: 69
+Genre : Metal
+Type : CD
+
+Album : Unforgiven
+Artist : Metalica
+year : 2332
+Price: 32
+ID: 70
+Genre : Metal
+Type : CD
+
+Album : Unforgiven
+Artist : Metalica
+year : 2332
+Price: 32
+ID: 71
+Genre : Metal
+Type : CD
+
+Album : Unforgiven
+Artist : Metalica
+year : 2332
+Price: 32
+ID: 72
+Genre : Metal
+Type : CD
+
+Album : Unforgiven
+Artist : Metalica
+year : 2332
+Price: 32
+ID: 73
+Genre : Metal
+Type : CD
+
+Album : Unforgiven
+Artist : Metalica
+year : 2332
+Price: 32
+ID: 74
+Genre : Metal
+Type : CD
+
+Album : Unforgiven
+Artist : Metalica
+year : 2332
+Price: 32
+ID: 75
+Genre : Metal
+Type : CD
+
+Album : rakiichica
+Artist : radoshisharkata
+year : 111
+Price: 88
+ID: 76
+Genre : Metal
+Type : CD
+
