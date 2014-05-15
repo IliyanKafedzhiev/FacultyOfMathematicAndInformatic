@@ -1,8 +1,0 @@
-﻿Build started 18.4.2013 г. 17:42:50.
-Project "C:\DataWin8\Cplusplus.cpp\PracticalProjects\Bank - VisualStudio Solution\Bank\Bank\Bank.vcxproj" on node 2 (Build target(s)).
-C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.Platform.targets(42,5): error MSB8020: The builds tools for Visual Studio 2010 (Platform Toolset = 'v100') cannot be found. To build using the v100 build tools, either click the Project menu or right-click the solution, and then select "Update VC++ Projects...". Install Visual Studio 2010 to build using the Visual Studio 2010 build tools.
-Done Building Project "C:\DataWin8\Cplusplus.cpp\PracticalProjects\Bank - VisualStudio Solution\Bank\Bank\Bank.vcxproj" (Build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:00
