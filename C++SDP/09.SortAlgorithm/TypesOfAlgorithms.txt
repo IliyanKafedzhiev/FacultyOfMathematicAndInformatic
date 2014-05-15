@@ -1,0 +1,17 @@
+                      Selection Sort 
+- unstable - inplace // change the order of equals elements //left part is sorted
+	// search min elem form current an replace them ,after it we cureent elem is next !
+	n^2
+                       Buble sort 
+// switch every pear by the churrent from the right part 
+current --;
+	
+                      Insertion Sort
+		-stable - inplace n^2
+
+                      Shell Sort
+                -stable - inplace n^2
+		//Insertion Sort in steps n/(2^k)
+
+                      Shake Sort
+		Buble sort started From Twice start;

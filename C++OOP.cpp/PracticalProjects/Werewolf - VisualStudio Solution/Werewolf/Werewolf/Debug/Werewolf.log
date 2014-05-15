@@ -1,0 +1,15 @@
+﻿Build started 16.5.2013 г. 23:10:47.
+Project "C:\DataWin8\Cplusplus.cpp\PracticalProjects\Werewolf - VisualStudio Solution\Werewolf\Werewolf\Werewolf.vcxproj" on node 2 (Build target(s)).
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+  main.cpp
+c:\datawin8\cplusplus.cpp\practicalprojects\werewolf - visualstudio solution\werewolf\werewolf\main.cpp(62): warning C4930: 'Werewolf Pesho(void)': prototyped function not called (was a variable definition intended?)
+Link:
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\DataWin8\Cplusplus.cpp\PracticalProjects\Werewolf - VisualStudio Solution\Werewolf\Debug\Werewolf.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\DataWin8\Cplusplus.cpp\PracticalProjects\Werewolf - VisualStudio Solution\Werewolf\Debug\Werewolf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\DataWin8\Cplusplus.cpp\PracticalProjects\Werewolf - VisualStudio Solution\Werewolf\Debug\Werewolf.lib" /MACHINE:X86 Debug\main.obj
+  Debug\Werewolf.obj
+  Werewolf.vcxproj -> C:\DataWin8\Cplusplus.cpp\PracticalProjects\Werewolf - VisualStudio Solution\Werewolf\Debug\Werewolf.exe
+Done Building Project "C:\DataWin8\Cplusplus.cpp\PracticalProjects\Werewolf - VisualStudio Solution\Werewolf\Werewolf\Werewolf.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.18
