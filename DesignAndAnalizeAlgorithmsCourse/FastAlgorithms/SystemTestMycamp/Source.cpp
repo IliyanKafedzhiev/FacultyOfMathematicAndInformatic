@@ -9,12 +9,13 @@ using namespace std;
 void read(double tmp)
 {
 	double xx;
- 	
+
 	if (cin>>xx)
 	{
 		read(xx);
 	}
-	
+
+
 	printf("%lf\n", sqrt(tmp));
 }
 
