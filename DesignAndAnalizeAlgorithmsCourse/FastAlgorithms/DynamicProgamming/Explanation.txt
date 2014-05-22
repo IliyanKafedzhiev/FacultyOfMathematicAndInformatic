@@ -1,0 +1,38 @@
+Dynamic Programming 
+ - memorization
+		
+		//counting number of pahts in NxM matrix from (1,1) to (N,M)
+
+		DynamicMemoriazedArray[N][M];
+		dfs(x,y)
+		{
+			if(x == N && y == M)
+			{
+				return 1;
+			}
+			if(DP[x][y] != -1)
+			{
+				return DynamicMemoriazedArray[N][M];
+			}
+			else 
+			{
+				return DP[x][y] = dfs(x+1,y) + dfs(x,y+1);
+			}
+		}
+
+		// We have array of numbers a[i] * X = quality ,where X are current year
+
+		DrinkWine(x,l,z)
+		{
+			return max((f(x+1,l+1,r)+x*a[l]),(f(x+1,l,r+1)+x*a[r]));
+		}
+
+		// backcase subjects with volume and price,Find max price with subjects in backcase
+
+		f(indexSubjects,volume) // we can put indexSubject,volume -> value in hash map and to use in in for optimizing algorithm
+		{
+			return max((f(indexSubjects + 1,volume - A[indexSubjects]) + cost[indexSubjects]),
+						f(indexSubjects + 1,volume))
+		}
+
+		// 

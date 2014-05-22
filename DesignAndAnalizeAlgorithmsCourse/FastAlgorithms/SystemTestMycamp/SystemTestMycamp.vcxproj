@@ -14,6 +14,7 @@
     <ProjectGuid>{DC69AB4B-E7F4-4084-A61A-03F16825E16F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SystemTestMycamp</RootNamespace>
+    <ProjectName>000.SystemTestMycamp</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -5,6 +5,8 @@
 #include <deque>
 #include <cmath>
 #include <stdlib.h>
+#include <map>
+#include <unordered_map>
 
 using namespace std;
 
@@ -172,9 +174,8 @@ public:
 	}
 };
 
-int main()
+void OverLoad()
 {
-	
 	GraphS G;
 	G.readGraphS();
 	G.Dijkstra(0, 9223372036854775807);

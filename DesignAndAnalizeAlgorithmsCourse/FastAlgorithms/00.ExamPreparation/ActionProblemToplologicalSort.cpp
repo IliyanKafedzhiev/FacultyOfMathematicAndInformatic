@@ -101,7 +101,7 @@ public:
 			String ax = q.top();
 			string action = ax.a;
 			q.pop();
-			
+
 
 			for (size_t i = 0; i < AdjList[Verteces[action].first].size(); i++)
 			{

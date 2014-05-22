@@ -5,13 +5,13 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.DejkstraOpitmalPathInGraph", "DejkstraOpitmalPathInGraph\DejkstraOpitmalPathInGraph.vcxproj", "{9D9F6252-0BB2-442B-9242-3D78D0DBA418}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SlowSortingAlgorithms", "SlowSortingAlgorithms\SlowSortingAlgorithms.vcxproj", "{4082B7FC-D9C8-4CBC-8F20-D41C610C2ECB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001.SlowSortingAlgorithms", "SlowSortingAlgorithms\SlowSortingAlgorithms.vcxproj", "{4082B7FC-D9C8-4CBC-8F20-D41C610C2ECB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FastSortingAlgorithms", "FastSortingAlgorithms\FastSortingAlgorithms.vcxproj", "{94CCCAE1-9EB2-4AFE-B8F4-EF345CE0C7E9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "002.FastSortingAlgorithms", "FastSortingAlgorithms\FastSortingAlgorithms.vcxproj", "{94CCCAE1-9EB2-4AFE-B8F4-EF345CE0C7E9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DivideAndConquer", "DivideAndConquer\DivideAndConquer.vcxproj", "{70B9A234-FAA5-44FB-91FD-862F3F264AD3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "003.DivideAndConquer", "DivideAndConquer\DivideAndConquer.vcxproj", "{70B9A234-FAA5-44FB-91FD-862F3F264AD3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SystemTestMycamp", "SystemTestMycamp\SystemTestMycamp.vcxproj", "{DC69AB4B-E7F4-4084-A61A-03F16825E16F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "000.SystemTestMycamp", "SystemTestMycamp\SystemTestMycamp.vcxproj", "{DC69AB4B-E7F4-4084-A61A-03F16825E16F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.GraphsBFSandDFSApl", "AlgorithmsWithGraphs\AlgorithmsWithGraphs.vcxproj", "{FD74911B-4321-496A-8C76-20DE78610E8E}"
 EndProject
@@ -19,7 +19,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.Graphs", "02.Graphs\02.G
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00.ExamPreparationHW", "00.ExamPreparation\00.ExamPreparation.vcxproj", "{BB17A651-DC93-4F18-B242-77ACDF75D866}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstExam", "FirstExam\FirstExam.vcxproj", "{1BE6DCE3-C2A3-4F70-9F1B-FA6768012D13}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "004.FirstExam", "FirstExam\FirstExam.vcxproj", "{1BE6DCE3-C2A3-4F70-9F1B-FA6768012D13}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04.DynamicProgamming", "DynamicProgamming\DynamicProgamming.vcxproj", "{A3C11410-0C7C-437F-BD0A-9CA57515E9FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "031.MinSpaningTree", "031.MinSpaningTree\031.MinSpaningTree.vcxproj", "{74290D42-42C5-42F2-A113-B71BAC8C5D7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{1BE6DCE3-C2A3-4F70-9F1B-FA6768012D13}.Debug|Win32.Build.0 = Debug|Win32
 		{1BE6DCE3-C2A3-4F70-9F1B-FA6768012D13}.Release|Win32.ActiveCfg = Release|Win32
 		{1BE6DCE3-C2A3-4F70-9F1B-FA6768012D13}.Release|Win32.Build.0 = Release|Win32
+		{A3C11410-0C7C-437F-BD0A-9CA57515E9FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A3C11410-0C7C-437F-BD0A-9CA57515E9FC}.Debug|Win32.Build.0 = Debug|Win32
+		{A3C11410-0C7C-437F-BD0A-9CA57515E9FC}.Release|Win32.ActiveCfg = Release|Win32
+		{A3C11410-0C7C-437F-BD0A-9CA57515E9FC}.Release|Win32.Build.0 = Release|Win32
+		{74290D42-42C5-42F2-A113-B71BAC8C5D7F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{74290D42-42C5-42F2-A113-B71BAC8C5D7F}.Debug|Win32.Build.0 = Debug|Win32
+		{74290D42-42C5-42F2-A113-B71BAC8C5D7F}.Release|Win32.ActiveCfg = Release|Win32
+		{74290D42-42C5-42F2-A113-B71BAC8C5D7F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
