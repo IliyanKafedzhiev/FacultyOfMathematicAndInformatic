@@ -15,22 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Users\Iliyan\Documents\GitHub\FacultyOfMathematicAndInformatic\C++SDP\SDP_Practical_Course\SDP_Practical_Course\Disjoint-set-And-Kruskal-Alg\Disjoint-set-And-Kruskal-Alg\Graph.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Users\Iliyan\Documents\GitHub\FacultyOfMathematicAndInformatic\C++SDP\SDP_Practical_Course\SDP_Practical_Course\Disjoint-set-And-Kruskal-Alg\Disjoint-set-And-Kruskal-Alg\UnionFind.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="UnionFind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\..\Users\Iliyan\Documents\GitHub\FacultyOfMathematicAndInformatic\C++SDP\SDP_Practical_Course\SDP_Practical_Course\Disjoint-set-And-Kruskal-Alg\Disjoint-set-And-Kruskal-Alg\Graph.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\..\..\Users\Iliyan\Documents\GitHub\FacultyOfMathematicAndInformatic\C++SDP\SDP_Practical_Course\SDP_Practical_Course\Disjoint-set-And-Kruskal-Alg\Disjoint-set-And-Kruskal-Alg\Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\..\..\Users\Iliyan\Documents\GitHub\FacultyOfMathematicAndInformatic\C++SDP\SDP_Practical_Course\SDP_Practical_Course\Disjoint-set-And-Kruskal-Alg\Disjoint-set-And-Kruskal-Alg\UnionFind.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnionFind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
