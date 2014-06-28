@@ -82,7 +82,16 @@
     <Text Include="Explanation.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CntSubPalintromes.cpp" />
+    <ClCompile Include="Flea.cpp" />
+    <ClCompile Include="Ladders.cpp" />
+    <ClCompile Include="MaxSubMatrix.cpp" />
     <ClCompile Include="MaxSubsequence.cpp" />
+    <ClCompile Include="Multy.cpp" />
+    <ClCompile Include="Pervazi_HW.cpp" />
+    <ClCompile Include="StringTransf_HW.cpp" />
+    <ClCompile Include="Tickets.cpp" />
+    <ClCompile Include="Trasuare.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

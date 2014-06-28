@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="Graph_Words_HW.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="UnionFind.cpp" />
   </ItemGroup>

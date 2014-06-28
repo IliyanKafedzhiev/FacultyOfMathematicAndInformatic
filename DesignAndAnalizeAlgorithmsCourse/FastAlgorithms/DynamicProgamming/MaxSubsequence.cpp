@@ -9,34 +9,29 @@ vector<int> memSums;
 
 vector<int> inputSequence;
 
-int ff(int left)
-{
-	if (left > 0)
-	{
-		return memSums[left] = (ff(left - 1) + inputSequence[left] > 0) ? (memSums[left - 1] + inputSequence[left]) : 0;
-	}
-	return inputSequence[left] ;
-}
-
-int main()
+int mainMSS()
 {
 	int n;
 	scanf("%d", &n);
 	inputSequence.resize(n);
 	memSums.resize(n);
-	int maxSum = -999999999;
+	int maxSum = 0;
 	for (size_t i = 0; i < n; i++)
 	{
 		scanf("%d", &inputSequence[i]);
+		memSums[i] = 0;
 	}
-	ff(n - 1);
-	for (size_t i = 0; i < n; i++)
+
+	maxSum = memSums[0] = max(0, inputSequence[0]);
+	for (size_t i = 1; i < n; i++)
 	{
-		if (memSums[i] > maxSum )
+		memSums[i] = max(0, memSums[i - 1] + inputSequence[i]);
+		if (maxSum < memSums[i])
 		{
 			maxSum = memSums[i];
 		}
 	}
+
 	cout << maxSum << endl;
 	return 0;
 }
