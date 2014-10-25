@@ -8,12 +8,13 @@ using namespace std;
 
 void read(double tmp)
 {
-	double xx;
+	double xxx;
 
-	if (cin>>xx)
+	if (cin>>xxx)
 	{
-		read(xx);
+		read(xxx);
 	}
+
 
 
 	printf("%lf\n", sqrt(tmp));
