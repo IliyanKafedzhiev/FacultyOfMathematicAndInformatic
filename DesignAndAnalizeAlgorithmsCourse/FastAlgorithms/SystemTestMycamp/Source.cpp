@@ -14,9 +14,6 @@ void read(double tmp)
 	{
 		read(xxx);
 	}
-
-
-
 	printf("%lf\n", sqrt(tmp));
 }
 
