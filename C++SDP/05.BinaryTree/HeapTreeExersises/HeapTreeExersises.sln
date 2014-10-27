@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HeapTreeExersises", "HeapTreeExersises\HeapTreeExersises.vcxproj", "{711E6013-8C96-4075-8FA7-E86BB27E6651}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.vcxproj", "{9E20AE07-FC3D-42A3-8842-D61F21C788BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{711E6013-8C96-4075-8FA7-E86BB27E6651}.Debug|Win32.ActiveCfg = Debug|Win32
+		{711E6013-8C96-4075-8FA7-E86BB27E6651}.Debug|Win32.Build.0 = Debug|Win32
+		{711E6013-8C96-4075-8FA7-E86BB27E6651}.Release|Win32.ActiveCfg = Release|Win32
+		{711E6013-8C96-4075-8FA7-E86BB27E6651}.Release|Win32.Build.0 = Release|Win32
+		{9E20AE07-FC3D-42A3-8842-D61F21C788BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E20AE07-FC3D-42A3-8842-D61F21C788BC}.Debug|Win32.Build.0 = Debug|Win32
+		{9E20AE07-FC3D-42A3-8842-D61F21C788BC}.Release|Win32.ActiveCfg = Release|Win32
+		{9E20AE07-FC3D-42A3-8842-D61F21C788BC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

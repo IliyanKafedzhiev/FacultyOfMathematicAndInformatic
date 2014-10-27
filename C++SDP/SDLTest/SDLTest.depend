@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1382697943 source:/media/iliyankafedzjiev/384AA9494AA904AA/Users/Iliyan/Dropbox/F_M_I/2013-2014_semester_winter/C++SDP/SDLTest/main.cpp
+	<cstdlib>
+	<stdlib.h>
+	<SDL/SDL.h>
+

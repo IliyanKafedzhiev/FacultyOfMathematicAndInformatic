@@ -1,0 +1,8 @@
+Album : ujen vqtar
+Artist : dsdasd
+year : 1933
+Price: 232.23
+ID: 0
+Genre : Metal
+Type : CD
+
