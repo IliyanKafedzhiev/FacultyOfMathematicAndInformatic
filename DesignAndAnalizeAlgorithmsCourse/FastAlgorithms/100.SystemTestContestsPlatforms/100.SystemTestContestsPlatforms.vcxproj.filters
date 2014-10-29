@@ -24,5 +24,11 @@
     <ClCompile Include="timus_1837.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Spoj0_Heating.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA_423.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
