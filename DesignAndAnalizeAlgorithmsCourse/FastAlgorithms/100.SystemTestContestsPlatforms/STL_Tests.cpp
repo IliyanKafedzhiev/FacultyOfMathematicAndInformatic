@@ -28,10 +28,3 @@ inline ld get_time(){
 #include "Utils.h"
 
 using namespace std;
-
-int main()
-{
-	Utils::Masks();
-	system("pause");
-	return 0;
-}
