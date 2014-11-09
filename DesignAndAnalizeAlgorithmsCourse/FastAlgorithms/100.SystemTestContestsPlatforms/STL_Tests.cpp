@@ -25,6 +25,4 @@ inline ld get_time(){
 #include <stdio.h>
 #include <deque>
 #include <queue>
-#include "Utils.h"
-
 using namespace std;

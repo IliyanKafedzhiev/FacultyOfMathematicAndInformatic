@@ -30,5 +30,14 @@
     <ClCompile Include="UVA_423.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Spoj0_Power.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spoj0_d-recurrence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Yandex_Digits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

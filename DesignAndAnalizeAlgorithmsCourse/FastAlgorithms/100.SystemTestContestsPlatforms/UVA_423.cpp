@@ -147,40 +147,40 @@ void Graph::GoKruskalAlgorithm_MinSpanningTree()
 
 }
 
-int main()
-{
-	
-		int n,m=2;
-		scanf("%d", &n);
-		Graph GR;
-		GR.vertices = n+1;
-		for (size_t j = 1; j < n+1; j++)
-		{
-			GR.weightedEdges.push_back(make_pair(make_pair(j, j), 0));
-			for (size_t i = 1; i < m; i++)
-			{
-				string  l;
-				cin >> l;
-				if ((l.size() == 1) && (l[0] == 'x'))
-				{
-					
-				}
-				else
-				{
-					std::stringstream ss;
-
-					ss <<l;
-
-					int foo;
-					ss >> foo ;
-
-					GR.weightedEdges.push_back(make_pair(make_pair(j, i), foo));
-					GR.weightedEdges.push_back(make_pair(make_pair(i, j), foo));
-				}
-			}
-			m++;
-		}
-		GR.GoKruskalAlgorithm_MinSpanningTree();
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	
+//		int n,m=2;
+//		scanf("%d", &n);
+//		Graph GR;
+//		GR.vertices = n+1;
+//		for (size_t j = 1; j < n+1; j++)
+//		{
+//			GR.weightedEdges.push_back(make_pair(make_pair(j, j), 0));
+//			for (size_t i = 1; i < m; i++)
+//			{
+//				string  l;
+//				cin >> l;
+//				if ((l.size() == 1) && (l[0] == 'x'))
+//				{
+//					
+//				}
+//				else
+//				{
+//					std::stringstream ss;
+//
+//					ss <<l;
+//
+//					int foo;
+//					ss >> foo ;
+//
+//					GR.weightedEdges.push_back(make_pair(make_pair(j, i), foo));
+//					GR.weightedEdges.push_back(make_pair(make_pair(i, j), foo));
+//				}
+//			}
+//			m++;
+//		}
+//		GR.GoKruskalAlgorithm_MinSpanningTree();
+//	system("pause");
+//	return 0;
+//}

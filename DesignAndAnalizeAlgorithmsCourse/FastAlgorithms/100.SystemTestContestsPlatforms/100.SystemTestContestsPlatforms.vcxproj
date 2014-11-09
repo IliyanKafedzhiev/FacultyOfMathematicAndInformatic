@@ -65,11 +65,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Spoj0_d-recurrence.cpp" />
     <ClCompile Include="Spoj0_Heating.cpp" />
+    <ClCompile Include="Spoj0_Power.cpp" />
     <ClCompile Include="STL_Tests.cpp" />
     <ClCompile Include="timus_1837.cpp" />
     <ClCompile Include="Utils.h" />
     <ClCompile Include="UVA_423.cpp" />
+    <ClCompile Include="Yandex_Digits.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
