@@ -174,7 +174,7 @@ public:
 	}
 };
 
-void OverLoad()
+int OverLoad()
 {
 	GraphS G;
 	G.readGraphS();
