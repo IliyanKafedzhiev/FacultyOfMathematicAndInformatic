@@ -65,6 +65,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CodeForce_CalculatingFunction.cpp" />
     <ClCompile Include="Spoj0_d-recurrence.cpp" />
     <ClCompile Include="Spoj0_Heating.cpp" />
     <ClCompile Include="Spoj0_Power.cpp" />

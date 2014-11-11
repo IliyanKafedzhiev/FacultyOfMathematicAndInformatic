@@ -20,66 +20,41 @@ typedef vector<vector<ll> > NMatrix;
 #include <iostream>
 #include <cstdlib>
 
-template <typename Ty>
-class Vector
-{
-public:
-	Ty* m_vector;
-
-	Ty& operator [] (int index)
-	{
-		return m_vector[index];
-	}
-};
-
+int MOD = 9929;
 template <typename Ty>
 class Matrix {
-private:
+public:
 	int N, M;
-	Ty** m_matrix;
+	vector< vector<Ty> >  m_matrix;
 	Ty* m_flatten;
 
 	
 public:
-	Matrix(int N, int M) :N(N), M(M), m_matrix(new Ty*[N])
+	Matrix(int N, int M) :N(N), M(M)
 	{
+		m_matrix.resize(N);
 		for (size_t i = 0; i < N; i++)
 		{
-			m_matrix[i] = new Ty[M];
+			m_matrix[i].resize(M);
 		}
  	}
 
 	Matrix(const Matrix& source) :N(source.N), M(source.M)
 	{
-		m_matrix = new Ty*[N];
+		m_matrix.resize(N);
 		for (size_t i = 0; i < N; i++)
 		{
-			m_matrix[i] = new Ty[M];
+			m_matrix.resize(M);
 			for (size_t k = 0; k < M; k++)
 			{
-				m_matrix[i][k] = source[i][k];
+				m_matrix[i][k] = source.m_matrix[i][k];
 			}
 		}
 	}
 
 	Matrix(const Matrix&& source) :N(source.N), M(source.M), m_matrix(source.m_matrix)
 	{
-		source.m_matrix = NULL;
-	}
-
-	~Matrix()
-	{
-		if (m_matrix)
-		{
-			for (size_t i = 0; i < N; i++)
-			{
-				delete [] m_matrix[i];
-			}
-		}
-		if (m_flatten)
-		{
-			delete [] m_flatten;
-		}
+		
 	}
 	// Access with bounds checking
 	Ty& operator()(int r, int c) 
@@ -87,12 +62,6 @@ public:
 		return m_matrix[r][c];
 	}
 
-	Vector<Ty>& operator[](int idn)
-	{
-		Vector<Ty> a;
-		a.m_vector = m_matrix[idn];
-		return a;
-	}
 
 	// Return matrix transpose
 	Matrix<Ty> T() const 
@@ -100,7 +69,7 @@ public:
 		Matrix<Ty> result(N,M);
 		for (int r = 0; r < N; ++r) {
 			for (int c = 0; c < M; ++c) {
-				result.element[c][r] = element[r][c];
+				result.m_matrix[c][r] = m_matrix[r][c];
 			}
 		}
 		return result;
@@ -119,9 +88,9 @@ public:
 			{
 				Ty accum = Ty(0);
 				for (int i = 0; i < M; ++i) {
-					accum += this->operator[r][i] * b[i][c];
+					accum += (this->m_matrix[r][i] * b.m_matrix[i][c]);
 				}
-				result[r][c] = accum;
+				result(r,c) = accum%MOD;
 			}
 		}
 		return result;
@@ -147,12 +116,54 @@ public:
 };
 
 
-void MultiplyMatrix(NMatrix& matrix, ll power, ll mod,NMatrix& res)
+void MatrixPower(Matrix<int>& a, int power, ll mod, Matrix <int> &res)
 {
+	res.N = a.N;
+	res.M = a.M;
+	res.m_matrix.resize(a.N);
+	for (size_t i = 0; i < a.N; i++)
+	{
+		res.m_matrix.resize(a.M);
+		for (size_t k = 0; k < a.M; k++)
+		{
+			res.m_matrix[i][k] = (i == k)? 1:0;
+		}
+	}
+	while (power > 0)
+	{
+		if ((power % 2) == 1)
+		{
+			res = (a * res);
+			//n -= 1;
+		}
 
+		a = (a*a);
+		power /= 2;
+	}
 }
 
-int main()
+
+void testMatrix()
+{
+	Matrix<int> A(2, 3);
+	Matrix<int> B(3, 2);
+	A(0, 0) = 1;
+	A(0, 1) = 0;
+	A(0, 2) = -2;
+	A(1, 0) = 0;
+	A(1, 1) = 3;
+	A(1, 2) = -1;
+	B(0, 0) = 0;
+	B(0, 1) = 3;
+	B(1, 0) = -2;
+	B(1, 1) = -1;
+	B(2, 0) = 0;
+	B(2, 1) = 4;
+
+	Matrix<int> product = A*B;
+	cout << product;
+}
+int recurrence()
 {
 	int tests,k,n,coef;
 	cin >> tests;
@@ -173,7 +184,8 @@ int main()
 			cin >> coef;
 			avec[j] = coef;
 		}
-
+		//reverse(cvec.begin(), cvec.end());
+		//reverse(avec.begin(), avec.end());
 		Matrix<int> cMatrix(k,k);
 		for (int j = 0; j < k; j++)
 		{
@@ -199,9 +211,18 @@ int main()
 				}
 			}
 		}
-		cout << cMatrix << endl;
-	}
+		Matrix<int> Tn(k,k);
 
-	system("pause");
+		MatrixPower(cMatrix, n - 1, 2, Tn);
+
+		Matrix<int> F(k,1);
+		for (size_t w = 0; w < k; w++)
+		{
+			F.m_matrix[w][0] = avec[w];
+		}
+
+		Matrix<int> Res(Tn*F);
+		cout << Res.m_matrix[0][0] << endl;
+	}
 	return 0;
 }
