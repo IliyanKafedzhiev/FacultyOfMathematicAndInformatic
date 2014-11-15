@@ -52,10 +52,6 @@ public:
 		}
 	}
 
-	Matrix(const Matrix&& source) :N(source.N), M(source.M), m_matrix(source.m_matrix)
-	{
-		
-	}
 	// Access with bounds checking
 	Ty& operator()(int r, int c) 
 	{
@@ -225,4 +221,11 @@ int recurrence()
 		cout << Res.m_matrix[0][0] << endl;
 	}
 	return 0;
+}
+
+int main()
+{
+	recurrence();
+	//system("pause");
+		return 0;
 }
