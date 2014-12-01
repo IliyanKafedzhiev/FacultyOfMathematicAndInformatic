@@ -1,0 +1,118 @@
+Dynamic Programming DP
+ x dyn[1024] // cache array
+ dyn[x] // cache 
+
+ *Dynamic * - Po kolko nachina ? => DP
+			- Optimalna strategiq => DP
+			- po ogranicheniqta na zadachata ? 
+
+dyn[n][n]  // cached values
+
+Task1 matrix[n][m] is given where m[i][j] area . ? nachina matrix[n][m] = "Zadachata e ot Informatica.bg tema DP" tyrsi patishta ot matica 
+{
+	int dyn[MAX_ROWS][MAX_COLS] (0,0)
+
+	memset(dyn,-1,sizeof(dyn));	//func za zapalvane . Kak raboti ? -> raboti samo za -1 zashtoto zapalva wseki byte s -1 '1111'
+ 
+	int recurse (int remRows, int remCols)  // 
+	{
+		if(dyn[remRows][remCols] != -1)
+		{
+			return dyn[remRows][remColw];
+		}
+
+		int result = recurse(remROws-1, remCols) + recurse(remRows,remColw - 1);
+		return dyn[remRows][remCols] = result;
+	}
+}
+
+Task2 dadena e stalbishte kachva se ili po edna ili po 2 stalbi na vednaj . Po kolko nachina moje da se kachish za n stalbi
+{
+	// recursivno
+	int go(int remainigSteps)
+	{
+		if(rem <= 1) return 1;
+		return go(rem - 1)+ go(rem - 2);
+	}
+
+	//dinamic
+	dyn[n];
+
+	/*MEMORIZATION*/
+	int go(int remainigSteps) // fibonachi O(n); ima po byrzo s vdigane na matrica na stepen O(log n)
+	{
+		if(dyn[rem] != -1) return dyn[rem];
+
+		int res =  go(rem - 1)+ go(rem - 2);
+
+		return dym[rem] = aus;
+	}
+
+	/*ITERATION*/ zapalvame dyn[n] interativno s cikyl
+
+	din[1]=1;
+	din[2]=1;
+	for(int i = 2; i<=n ;i++)
+	{
+		din[i] = din[i-1]+dyn[i-2];
+	}
+}
+
+//dynTable n-menrna tablica 
+dinamicna tablica moje da e map
+
+**statove koito sa double gi umnojavame do int 42.023 -> 42023
+** ako vsichki stoijnosti sa validni si slagame buleva matrica za ne izpolzwanite el
+** spestqwame pamet pri iterativnoto kogato tekushtata stoinost zavisi samo ot predishnite k elmenti.
+** ciklichna rekursiq ako ima cikli e ili BFS ili Deijkstra
+4--Complexity of dynamic
+		din[N][M][K]
+
+		recursion 
+			cornerCases -> O(1)
+			body -> O(f(n))
+			cache-> O(1)|O(log)
+		O(N.M.K.F)
+
+5Task Eli ima vinarska izba s n butilki wsqka butilka = A[i] cena * k godini otlijala A0 ... An ceni na butilki moje da vzima samo otlevo i otdesno
+{
+	int dim[N][N][N];
+	go(int L, int R, int Y)
+	{
+		if(L>R) return 0;
+		
+		int& res = dym [L][R][Y];
+		if(res != -1)
+		{
+			return res;
+		}
+
+		return res = max(go(L+1,R,Y+1) + Y*A[L],go(L,R-1,Y+1) + Y*A[R]); 
+	}
+
+	//dobavka i namirane na nachina po koito se postiga otimalnoto reshenie
+	//vastanovqvane na sastoyanieto
+
+	struct State
+	{
+		int val;
+		bool move; 
+	}
+
+	State dim[N][N][N];
+	
+	go(int L, int R, int Y)
+	{
+		if(L>R) return 0;
+		
+		int& res = dym [L][R][Y];
+		if(res != -1)
+		{
+			return res;
+		}
+
+		return res = max(go(L+1,R,Y+1) + Y*A[L],go(L,R-1,Y+1) + Y*A[R]); 
+	}
+}
+
+6.Task Podobna + dwama dushi igraqt i wzimat na wseki hod
