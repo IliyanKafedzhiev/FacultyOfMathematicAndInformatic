@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A7D59D7A-AFEE-42F4-AA46-FEAC9C5EF98F}</ProjectGuid>
-    <RootNamespace>My100SystemTestContestsPlatforms</RootNamespace>
+    <ProjectGuid>{D64236A0-7C83-4A64-A384-FF8B4E333F72}</ProjectGuid>
+    <RootNamespace>CodeForces</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -44,7 +44,6 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -65,24 +64,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Code.cpp" />
-    <ClCompile Include="CodeIt_Brackets.cpp" />
-    <ClCompile Include="CodeForce_CalculatingFunction.cpp" />
-    <ClCompile Include="Diet.cpp" />
-    <ClCompile Include="Hill.cpp" />
-    <ClCompile Include="Spoj0_d-recurrence.cpp" />
-    <ClCompile Include="Spoj0_Heating.cpp" />
-    <ClCompile Include="Spoj0_Power.cpp" />
-    <ClCompile Include="STL_Tests.cpp" />
-    <ClCompile Include="Timus_1471.cpp" />
-    <ClCompile Include="timus_1837.cpp" />
-    <ClCompile Include="CodeIt_tsk1.cpp" />
-    <ClCompile Include="Utils.h" />
-    <ClCompile Include="UVA_423.cpp" />
-    <ClCompile Include="Yandex_Digits.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Tasks.h" />
+    <ClCompile Include="01.Movies.cpp" />
+    <ClCompile Include="02.Words.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
