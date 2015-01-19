@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.DejkstraOpitmalPathInGraph", "DejkstraOpitmalPathInGraph\DejkstraOpitmalPathInGraph.vcxproj", "{9D9F6252-0BB2-442B-9242-3D78D0DBA418}"
 EndProject
@@ -27,11 +27,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "031.MinSpaningTree", "031.M
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "100.SystemTestContestsPlatforms", "100.SystemTestContestsPlatforms\100.SystemTestContestsPlatforms.vcxproj", "{A7D59D7A-AFEE-42F4-AA46-FEAC9C5EF98F}"
 EndProject
-<<<<<<< HEAD
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "101.DynamicPrograming", "101.DynamicPrograming\101.DynamicPrograming.vcxproj", "{78B14E4A-DA65-4129-857E-C6BE4E2BF276}"
-=======
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeForces", "CodeForces\CodeForces.vcxproj", "{D64236A0-7C83-4A64-A384-FF8B4E333F72}"
->>>>>>> Added some tasks.
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "102.CodeForces", "CodeForces\CodeForces.vcxproj", "{D64236A0-7C83-4A64-A384-FF8B4E333F72}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "103.FacebookContest", "103.FacebookContest\103.FacebookContest.vcxproj", "{5E689444-4A26-4523-A5E5-1A3F929CD710}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,17 +87,18 @@ Global
 		{A7D59D7A-AFEE-42F4-AA46-FEAC9C5EF98F}.Debug|Win32.Build.0 = Debug|Win32
 		{A7D59D7A-AFEE-42F4-AA46-FEAC9C5EF98F}.Release|Win32.ActiveCfg = Release|Win32
 		{A7D59D7A-AFEE-42F4-AA46-FEAC9C5EF98F}.Release|Win32.Build.0 = Release|Win32
-<<<<<<< HEAD
 		{78B14E4A-DA65-4129-857E-C6BE4E2BF276}.Debug|Win32.ActiveCfg = Debug|Win32
 		{78B14E4A-DA65-4129-857E-C6BE4E2BF276}.Debug|Win32.Build.0 = Debug|Win32
 		{78B14E4A-DA65-4129-857E-C6BE4E2BF276}.Release|Win32.ActiveCfg = Release|Win32
 		{78B14E4A-DA65-4129-857E-C6BE4E2BF276}.Release|Win32.Build.0 = Release|Win32
-=======
 		{D64236A0-7C83-4A64-A384-FF8B4E333F72}.Debug|Win32.ActiveCfg = Debug|Win32
 		{D64236A0-7C83-4A64-A384-FF8B4E333F72}.Debug|Win32.Build.0 = Debug|Win32
 		{D64236A0-7C83-4A64-A384-FF8B4E333F72}.Release|Win32.ActiveCfg = Release|Win32
 		{D64236A0-7C83-4A64-A384-FF8B4E333F72}.Release|Win32.Build.0 = Release|Win32
->>>>>>> Added some tasks.
+		{5E689444-4A26-4523-A5E5-1A3F929CD710}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E689444-4A26-4523-A5E5-1A3F929CD710}.Debug|Win32.Build.0 = Debug|Win32
+		{5E689444-4A26-4523-A5E5-1A3F929CD710}.Release|Win32.ActiveCfg = Release|Win32
+		{5E689444-4A26-4523-A5E5-1A3F929CD710}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

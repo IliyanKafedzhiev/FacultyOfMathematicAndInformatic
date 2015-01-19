@@ -18,30 +18,29 @@ typedef long long ll;
 typedef long double ld;
   
 
-int maiWen()
-{
-	int n, x ,l ,r , lr = 1;
-	cin >> n;
-	cin >> x;
-	int WM = 0;
-	if (n == 0)
-	{
-		WM = 0;
-	}
-	for (int i = 0; i < n; i++)
-	{
-		cin >> l;
-		cin >> r; 
-		int diff = l - lr;
-		WM += r - l + 1 + (diff)%x;
-		if (lr < r)
-		{
-			lr = r+1;
-		}
-	}
-	 
+int maiSdasn()
+{ 
+	int a, b, c, d;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	cin >> d;
 
-	cout << WM << endl;
+	int mishaP = std::max((3 * a) / 10, a - (a / 250)*c);
+	int vasyaP = std::max((3 * b) / 10, b - (b / 250)*d);
+
+	if (mishaP > vasyaP)
+	{
+		cout << "Misha" << endl;
+	}
+	else if (vasyaP > mishaP)
+	{
+		cout << "Vasya" << endl;
+	}
+	else
+	{
+		cout << "Tie" << endl;
+	}
 	//system("pause");
 	return 0;
 }

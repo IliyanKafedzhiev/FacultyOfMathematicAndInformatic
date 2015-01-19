@@ -16,45 +16,53 @@ using namespace std;
 
 typedef long long ll;
 typedef long double ld;
+char input[21];
+char input2[21];
 
 
-int main()
+int mainWQ()
 {
-	int n, m, l, r, lr = 1;
-	cin >> n;
-	cin >> m;
+	int n;
+	cin >> n; 
 	map<string, string> Dic;
 	string Fl,Sl;
-	for (int i = 0; i < m; i++)
+	vector<string> res;
+	for (int i = 0; i < n; i++)
 	{
-		cin >> Fl;
-		cin >> Sl;
+		scanf("%s %s", input, input2);
+
+		Fl = input;
+		Sl = input2; 
 		Dic[Fl] = Sl;
-	}
-	vector<string> res(n);
-	for (int i = 0; i < n; i++)
+		res.push_back(Fl);
+	} 
+	vector<pair<string, string > > output;
+	for (int i = 0; i < res.size(); i++)
 	{
-		cin >> Fl;
-		if (Dic[Fl].size()  < Fl.size())
+		Fl = res[i];
+		int changes = 0;
+		pair<string, string> p;
+		p.first = Fl;
+		while (Dic.find(Fl) != Dic.end())
 		{
-			res[i] = Dic[Fl];
+			changes++;
+			Sl = Dic[Fl];
+			Dic.erase(Dic.find(Fl));
+			Fl = Sl;
 		}
-		else
+		if (changes > 0)
 		{
-			res[i] = Fl;
+			p.second = Fl;
+			output.push_back
+				(p);
 		}
 	}
 
-	for (int i = 0; i < n; i++)
+	printf("%d\n", output.size());
+	for (size_t i = 0; i < output.size(); i++)
 	{
-		cout << res[i];
-		if (i != n -1)
-		{
-			cout << " ";
-		}
+		printf("%s %s\n", output[i].first.c_str(), output[i].second.c_str());
 	}
-	cout << endl;
-
 	//system("pause");
 	return 0;
 }
