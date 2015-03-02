@@ -15,40 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="01.Movies.cpp">
+    <ClCompile Include="01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="02.Words.cpp">
+    <ClCompile Include="03.Money.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="01CD.cpp">
+    <ClCompile Include="04.Dev.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2CD.cpp">
+    <ClCompile Include="05.Report.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="3CD.cpp">
+    <ClCompile Include="02.Magnets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Exchange.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="01.ACM.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="02.ACM.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="01.Rackethon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="a01e.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="а02.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="а03.cpp">
+    <ClCompile Include="06.Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
